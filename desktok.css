@@ -1,0 +1,66 @@
+:root{
+    --primary--color:#612674;
+}
+@media screen and (min-width:781px) and (max-width:1099px) {
+    html {
+        font-size: 62.5%;
+
+    }
+
+    body {
+        margin: 0
+    }
+
+    header {
+        padding:1rem;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        align-items: center;
+
+    }
+
+    .title {
+        flex: 1;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+        color: blueviolet;
+        text-transform: capitalize;
+        text-align: start;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .navegaçao {
+         flex: 1;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+
+    .item__lista {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        list-style-type: none;
+
+    }
+
+
+
+    .item__lista a {
+        text-decoration: none;
+        padding:1rem;
+    }
+
+     .item__lista a:hover{
+        background-color: color-mix(in srgb, var(--primary--color), white 90%) ;
+     }
+}
