@@ -1,31 +1,40 @@
-:root{
-    --primary--color:#612674;
+:root {
+    --primary--color: #612674;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
 
 @media screen and (max-width:780px) {
-    html{
+    html {
         font-size: 62.5%;
-   }
-    body{
+    }
+
+    body {
         margin: 0;
         font-family: "Roboto", sans-serif;
     }
+
     header {
         display: flex;
         flex-direction: column;
 
     }
 
+    .icone {
+        display: none;
+    }
+
     .title {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
-    .navegaçao{
+
+    .navegaçao {
         margin: 0 0 1.5rem;
     }
+
     .lista {
         background-color: var(--primary--color);
         padding: 0;
@@ -33,16 +42,16 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+
     }
 
     .item__lista {
         text-transform: capitalize;
-        font-size: 1.6rem ;
-        width: 100%;   
+        font-size: 1.6rem;
+        width: 100%;
         text-align: center;
         padding: 0;
-        margin:0;
+        margin: 0;
     }
 
     a {
@@ -52,56 +61,81 @@
         padding: 1.4rem 0;
     }
 
-    .lista a:hover{
-       background-color: color-mix(in srgb, var(--primary--color), white 10%) ;
+    .lista a:hover {
+        background-color: color-mix(in srgb, var(--primary--color), white 10%);
     }
 
-    main{
+    main {
         text-align: center;
     }
 
-    .title__main{
+    .title__main {
         font-size: 1.8rem;
-        color :var(--primary--color);
+        color: var(--primary--color);
         margin: 0 0 1rem;
-        font-weight:600;
+        font-weight: 600;
     }
-    
-    .description__main{
-        color:var(--primary--color);
+
+    .description__main {
+        color: var(--primary--color);
         font-size: 1.4rem;
-        margin:0 1rem;
+        margin: 0 1rem;
         text-align: center;
-        line-height: 1.5; 
+        line-height: 1.5;
         margin-bottom: 1rem;
     }
 
-    .bnt__descubra{
+    .bnt__descubra {
         padding: 1rem 3.5rem;
         background-color: rgb(0, 182, 182);
         color: aliceblue;
         border-radius: 6px;
-        border:1px solid transparent;
+        border: 1px solid transparent;
         text-transform: capitalize;
         margin-bottom: 4rem;
     }
 
-    .bnt__descubra:hover{
+    .bnt__descubra:hover {
         cursor: pointer;
-        background-color:rgb(9, 119, 119) ;
+        background-color: rgb(9, 119, 119);
     }
 
-    
 
-    .subtitle__description{
-        color: black;
-        text-align: center;
-        line-height: 1.5; 
-        font-size: 1.4rem;
+    .container__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1;
+        background-color: #f0f0f0;
     }
 
-    .icone{
-        display: none;
+    .info__card {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:auto;
+        margin-top: 2rem;
+        max-width: 35rem; 
     }
-    
-}  
+
+    .image__card {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .title__card {
+        font-family:"Roboto", sans-serif;
+        font-weight: 600;
+        text-transform:capitalize;
+        font-size:2rem;
+        margin-top: 2rem;
+    }
+
+    .subtitle__description {
+        font-family:"Roboto", sans-serif;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+}
+

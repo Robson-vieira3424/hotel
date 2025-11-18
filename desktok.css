@@ -1,6 +1,9 @@
-:root{
-    --primary--color:#612674;
+:root {
+    --primary--color: #612674;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
 @media screen and (min-width:781px) and (max-width:1099px) {
     html {
         font-size: 62.5%;
@@ -12,7 +15,7 @@
     }
 
     header {
-        padding:1rem;
+        padding: 1rem;
         display: flex;
         flex-direction: row;
         width: 100vw;
@@ -24,18 +27,8 @@
         flex: 1;
     }
 
-    .title h1 {
-        font-size: 3rem;
-        color: blueviolet;
-        text-transform: capitalize;
-        text-align: start;
-        margin: 0;
-        padding: 0;
-
-    }
-
     .navegaçao {
-         flex: 1;
+        flex: 1;
     }
 
     .lista {
@@ -43,7 +36,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-       
+
     }
 
     .item__lista {
@@ -57,63 +50,106 @@
 
     .item__lista a {
         text-decoration: none;
-        padding:1rem;
+        padding: 1rem;
     }
 
-     .item__lista a:hover{
-        background-color: color-mix(in srgb, var(--primary--color), white 90%) ;
-     }
+    .item__lista a:hover {
+        background-color: color-mix(in srgb, var(--primary--color), white 90%);
+    }
 
-     main{
+    main {}
 
-     }
-
-     .content-primary{
-        width:100vw;
+    .content-primary {
+        width: 100vw;
         background-color: var(--primary--color);
         display: flex;
         align-items: center;
         flex-direction: column;
-     }
+    }
 
-     .icone__play{
+    .icone__play {
         height: 7rem;
         width: 7rem;
         margin: 3rem 0 1.5rem;
-     }
+    }
 
-     .icone__play img{
+    .icone__play img {
         height: 100%;
         width: 100%;
-     }  
+    }
 
-     .title__main{
+    .title__main {
         font-size: 2.4rem;
-        color: #fff;
-        margin:1rem 0rem;
-     }
+        color: var(--primary--color);
+        margin: 1rem 0rem;
+        text-transform: capitalize;
+        color: #f0f0f0;
+    }
 
-     .description__main{
+    .description__main {
         color: #fff;
         font-size: 1.4rem;
         line-height: 1.5rem;
         text-align: center;
         padding: 1rem 3rem 1rem 3rem;
         margin-bottom: 1rem;
-     }
+    }
 
-     .bnt__descubra{
+    .bnt__descubra {
         padding: 1rem 3.5rem;
         background-color: rgb(0, 182, 182);
         color: aliceblue;
         border-radius: 6px;
-        border:1px solid transparent;
+        border: 1px solid transparent;
         text-transform: capitalize;
         margin-bottom: 2rem;
     }
 
-    .bnt__descubra:hover{
+    .bnt__descubra:hover {
         cursor: pointer;
-        background-color:rgb(9, 119, 119) ;
+        background-color: rgb(9, 119, 119);
+    }
+
+    .container__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #f0f0f0;
+
+    }
+
+    .info__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 40vw;
+        padding: auto;
+        margin-top: 2rem;
+
+
+    }
+
+    .image__card {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .title__card {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 2.7rem;
+        text-transform: capitalize;
+        color: var(--primary--color);
+        font-weight: 500;
+    }
+
+    .subtitle__description {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1.5;
     }
 }
