@@ -122,22 +122,29 @@
     }
 
     .container__cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
         background-color: #f0f0f0;
-
+        width: 100vw;
+        height: 360px;
+        padding-top: 3rem;;
+       
     }
 
-    .info__card {
+    .max__width__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 75%;
+        height: 95%;
+        margin: 0 auto;
+    }
+
+    .card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 40vw;
-        padding: auto;
-        margin-top: 2rem;
+        width: 20%;
+
     }
 
     .image__card {
@@ -153,10 +160,57 @@
         font-size: 3rem;
     }
 
-    .subtitle__description {
+    .info__card {
         font-family: "Roboto", sans-serif;
         font-size: 1.3rem;
         text-align: left;
         line-height: 1.5;
+        min-width: 18vw;
+    }
+
+    .container__plans{
+        
+        width: 100vw;
+        
+    }
+
+    .max__width__plans{
+        width: 80%;
+        display: flex;
+        gap: 2rem;
+        height: 30rem;
+    }
+
+    .plan{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        background:#573a61;
+
+        
+    }
+
+    figure{
+        width: 12rem;
+        height: 9rem;
+        margin: 0;
+    }
+
+    figure img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__description__plan{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title__plan{
+        margin: 0;
+    }
+
+    .description_plan{
+        margin: 0;
     }
 }

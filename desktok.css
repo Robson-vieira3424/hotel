@@ -110,7 +110,7 @@
         background-color: rgb(9, 119, 119);
     }
 
-    .container__cards {
+    .max__width__cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -120,7 +120,7 @@
 
     }
 
-    .info__card {
+    .card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -146,7 +146,7 @@
         font-weight: 500;
     }
 
-    .subtitle__description {
+    .info__card {
         font-family: "Roboto", sans-serif;
         font-size: 1.3rem;
         text-align: left;
